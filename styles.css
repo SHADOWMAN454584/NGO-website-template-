@@ -99,16 +99,41 @@ body {
     display: none; /* Hide the <img> tag since we're using background */
 }
 /* Page Header */
-.page-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 80px 0;
+.page-header{
+    background-image:url(https://miro.medium.com/v2/resize:fit:1000/0*blJoZdSoHEI45E8l.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(3, 2, 2);
+    padding: 120px 0;
     text-align: center;
+    position: relative;
+}
+.page-header-about-us {
+    background-image:url(https://miro.medium.com/v2/resize:fit:1000/0*blJoZdSoHEI45E8l.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(3, 2, 2);
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+}
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 43, 65, 0.43); /* Dark overlay */
+    z-index: 1;
 }
 
 .page-header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 2px;
 }
 
 .page-header p {
